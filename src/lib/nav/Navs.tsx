@@ -2,11 +2,8 @@ import Nav from "~/lib/nav/Nav";
 import {ImageWithPlaceholder} from "~/components_ui/ImageWithPlaceholder";
 import {white_cross} from "~/assets";
 
-interface CloseNavProps {
-    showLeftContent: boolean
-}
 
-export const CloseNav = (props:CloseNavProps) => (
+export const CloseNav = (props) => (
     <Nav
       leftContent={
         <ImageWithPlaceholder
@@ -21,7 +18,7 @@ export const CloseNav = (props:CloseNavProps) => (
     />
 )
 
-export const BasicHeader= (props:CloseNavProps) => (
+export const BasicHeader= (props) => (
     <Nav
         {...props}
     />

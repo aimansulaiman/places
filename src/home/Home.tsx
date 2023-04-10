@@ -74,7 +74,6 @@ const Home = (props) => {
                 leftAction={hidePlacesOption}
                 middleContent={en.home.headerTitle}
                 backgroundColor={color.primary}
-                showLeftContent={false}
               />
               <InputItem
                 clear
@@ -86,17 +85,17 @@ const Home = (props) => {
                 style={styles.homeSearchBar}
               />
               <View style={{flex: 1}}>
-                  <MapView
-                    style={{flex: 1}}
-                    region={mapViewRegion}
-                    initialRegion={constant.initialRegion}
-                  />
+                <MapView
+                 style={{flex: 1}}
+                 region={mapViewRegion}
+                 initialRegion={constant.initialRegion}
+                />
               </View>
               <InfoCard
-                  cardTitle={en.home.cardHeaderTitle}
-                  topContentText={props.name}
-                  middleContentText={props.geometry.lat}
-                  bottomContentText={props.geometry.lng}
+                cardTitle={en.home.cardHeaderTitle}
+                topContentText={props.name}
+                middleContentText={props.geometry.lat}
+                bottomContentText={props.geometry.lng}
               />
             </View>
             <SceneModal

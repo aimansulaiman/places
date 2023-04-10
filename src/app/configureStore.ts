@@ -4,10 +4,10 @@ import { createMigrate, persistReducer, persistStore } from 'redux-persist'
 import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2'
 
 import Reactotron from '../../ReactotronConfig'
-import {GlobalState} from "../redux";
+import {GlobalState} from "~/redux";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import {setGlobalStore} from "../redux/store";
-import {rootReducer} from "../redux/reducers";
+import {setGlobalStore} from "~/redux/store";
+import {rootReducer} from "~/redux/reducers";
 
 const migrations = {}
 
